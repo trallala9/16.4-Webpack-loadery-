@@ -1,14 +1,23 @@
 import React from 'react';
 import uuid from 'uuid';
 import Title from '../components/Title.js';
-import style from '../components/App.css';
+import style from './App.css';
 
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: []
+            data: [{
+                id: 1,
+                text: 'zadanie 1'
+                }, {
+                id: 2,
+                text: 'zadanie 2'
+                }, {
+                id: 3,
+                text: 'zadanie 3'
+                }]
         };
     }
     addTodo(val) {
@@ -34,9 +43,10 @@ class App extends React.Component {
             } >
             Tutaj pojawią się komponenty naszej aplikacji. <
             /div>
-        );
+
+        )
     }
-}
+};
 
 export default App;
 //skonczylam na loader dla css
