@@ -8464,6 +8464,9 @@ var App = function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 { className: _App2.default.TodoApp },
+                _react2.default.createElement(_Title2.default, { title: 'ToDo List',
+                    number: this.state.data.length
+                }),
                 'Tutaj pojawi\u0105 si\u0119 komponenty naszej aplikacji. '
             );
         }
@@ -8471,8 +8474,6 @@ var App = function (_React$Component) {
 
     return App;
 }(_react2.default.Component);
-
-;
 
 exports.default = App;
 //skonczylam na loader dla css
